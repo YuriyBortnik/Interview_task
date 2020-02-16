@@ -1,0 +1,21 @@
+@import '../helpers/variables';
+
+.btn {
+  max-width: 250px;
+  width: 100%;
+  height: 40px;
+  font-weight: 600;
+  border: 1px solid $grey;
+  border-radius: 6px;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: $white;
+    background: $dark;
+    transition: all .2s ease-in-out;
+  }
+
+  &-open {
+    margin-top: 20px;
+  }
+}

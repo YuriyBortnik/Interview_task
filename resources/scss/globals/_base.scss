@@ -1,0 +1,19 @@
+@import '../helpers/variables';
+
+body, html {
+  width: 100%;
+  color: $black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  -webkit-overflow-scrolling: touch;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  width: 100%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="app wrap">
+    <button id="open-calc" class="btn btn-open">Open calc</button>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__header">
+                <h1 class="modal__title">Simple calc</h1>
+                <div id="hide-calc" class="modal__close">X</div>
+            </div>
+            <div class="modal__total">
+                <p class="modal__total-title">Total result</p>
+                <div class="modal__total-result"></div>
+            </div>
+            <div class="modal__calc">
+                <div class="modal__block">
+                    <div class="modal__checkbox">
+                        <input class="js-check modal__checkbox-box" type="checkbox">
+                    </div>
+                    <div class="modal__inputs">
+                        <div class="modal__inputs__block">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                        </div>
+                    </div>
+                    <div class="modal__result"></div>
+                </div>
+                <div class="modal__block">
+                    <div class="modal__checkbox">
+                        <input class="js-check modal__checkbox-box" type="checkbox">
+                    </div>
+                    <div class="modal__inputs">
+                        <div class="modal__inputs__block">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                        </div>
+                    </div>
+                    <div class="modal__result"></div>
+                </div>
+                <div class="modal__block">
+                    <div class="modal__checkbox">
+                        <input class="js-check modal__checkbox-box" type="checkbox">
+                    </div>
+                    <div class="modal__inputs">
+                        <div class="modal__inputs__block">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                            <input class="js-input modal__input" disabled="disabled" type="number">
+                        </div>
+                    </div>
+                    <div class="modal__result"></div>
+                </div>
+            </div>
+            <section class="modal__actions">
+                <div class="modal__radio">
+                    <input id="radio-1" class="modal__radio-input" value="add" name="action" type="radio" checked>
+                    <label for="radio-1" class="radio-label">Sum</label>
+                </div>
+                <div class="modal__radio">
+                    <input id="radio-2" class="modal__radio-input" value="multiply" name="action" type="radio">
+                    <label for="radio-2" class="radio-label">Multiply</label>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/app.js"></script>
+</html>

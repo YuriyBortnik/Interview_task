@@ -1,0 +1,106 @@
+@mixin response($prefix, $media) {
+  @media only screen and ($prefix+-width: $media+px) {
+    @content;
+  }
+}
+
+@mixin response-to($media1, $media2) {
+  @media only screen and (min-width: $media1+px) and (max-width: $media2+px) {
+    @content;
+  }
+}
+
+@mixin response-height($prefix, $media) {
+  @media ($prefix+-height: $media+px) {
+    @content;
+  }
+}
+
+@mixin response-height-to($media1, $media2) {
+  @media (min-height: $media1+px) and (max-height: $media2+px) {
+    @content;
+  }
+}
+
+
+$mob: 480;
+$mob-tab: 768;
+$tab: 960;
+$des: 1200;
+
+$mob-px: 480px;
+$mob-tab-px: 768px;
+$tab-px: 960px;
+$des-px: 1200px;
+
+$height-1: 900;
+$height-2: 700;
+$height-3: 550;
+$height-4: 420;
+
+
+@mixin mob-min() {
+  @include response(min, $mob + 1) {
+    @content;
+  }
+}
+@mixin mob-tab-min() {
+  @include response(min, $mob-tab + 1) {
+    @content;
+  }
+}
+@mixin tab-min() {
+  @include response(min, $tab + 1) {
+    @content;
+  }
+}
+@mixin des-min() {
+  @include response(min, $des + 1) {
+    @content;
+  }
+}
+
+
+
+@mixin mob() {
+  @include response(max, $mob) {
+    @content;
+  }
+}
+@mixin mob-tab() {
+  @include response(max, $mob-tab - 1) {
+    @content;
+  }
+}
+@mixin tab() {
+  @include response(max, $tab - 1) {
+    @content;
+  }
+}
+@mixin des() {
+  @include response(max, $des - 1) {
+    @content;
+  }
+}
+
+
+@mixin height-1() {
+  @include response-height(max, $height-1) {
+    @content;
+  }
+}
+@mixin height-2() {
+  @include response-height(max, $height-2) {
+    @content;
+  }
+}
+@mixin height-3() {
+  @include response-height(max, $height-3) {
+    @content;
+  }
+}
+@mixin height-4() {
+  @include response-height(max, $height-4) {
+    @content;
+  }
+}

@@ -33,7 +33,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "bugs": {
     "url": "https://github.com/YuriyBortnik/Interview_task/issues"
